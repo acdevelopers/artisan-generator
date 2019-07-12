@@ -1,0 +1,44 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Console\GeneratorCommand as Command;
+
+/**
+ * Class DummyClass.
+ *
+ * @package DummyNamespace
+ */
+class DummyClass extends Command
+{
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'dummy:command';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Command description';
+
+    /**
+     * The type of class being generated.
+     *
+     * @var string
+     */
+    protected $type = 'Command type';
+
+    /**
+     * Get the stub file for the generator.
+     *
+     * @return string
+     */
+    protected function getStub()
+    {
+        // TODO: Implement getStub() method.
+    }
+}

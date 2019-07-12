@@ -1,0 +1,4 @@
+
+
+// DummyRouteName routes...
+Route::DummyRouteMethod('DummyRouteName', DummyNamespacedController::class);
