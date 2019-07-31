@@ -182,7 +182,8 @@ class ControllerMakeCommand extends BaseCommand
     {
         $params = [];
 
-        $params['--file'] = $this->ask('Where would you like to save the generated route, "api" or "web"?', 'web');
+        $params['--file'] = str_replace('.php', '',
+            $this->ask('Where would you like to save the generated route, "api", "web", others?', 'web'));
 
         $params['name'] = $this->ask('Please provide a name for this controller route', '');
 
